@@ -2,7 +2,7 @@
 
 DOCKER_IMAGE = php:7.1
 
-.PHONY: setup install clean test help
+.PHONY: setup install clean test docker help
 .DEFAULT_GOAL := help
 
 setup: install ## Setup the project for development
