@@ -37,6 +37,9 @@ final class LogHandler extends Handler
         return Handler::DONE;
     }
 
+    /**
+     * Translates an error exception into a log level.
+     */
     private function translateError(\ErrorException $exception): string
     {
         switch ($exception->getSeverity()) {

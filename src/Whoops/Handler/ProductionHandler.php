@@ -23,9 +23,6 @@ class ProductionHandler extends Handler
         $this->debug = $debug;
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function handle(): int
     {
         if ($this->debug) {

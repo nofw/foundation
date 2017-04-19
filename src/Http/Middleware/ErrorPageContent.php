@@ -59,11 +59,17 @@ final class ErrorPageContent implements MiddlewareInterface
         return $response;
     }
 
+    /**
+     * Checks if the response is an error one based on the status code.
+     */
     private function isError(ResponseInterface $response): bool
     {
         return $response->getStatusCode() >= 400 && $response->getStatusCode() < 600;
     }
 
+    /**
+     * Checks if HTML response is expected by the client.
+     */
     private function isHtml(ServerRequestInterface $request, ResponseInterface $response): bool
     {
         $accept = $request->getHeaderLine('Accept');
