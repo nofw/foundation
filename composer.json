@@ -19,7 +19,9 @@
     "require-dev": {
         "phpunit/phpunit": "^6.1",
         "zendframework/zend-diactoros": "^1.0",
-        "middlewares/utils": "~0.9"
+        "middlewares/utils": "~0.9",
+        "filp/whoops": "^2.1",
+        "psr/log": "^1.0"
     },
     "autoload": {
         "psr-4": {
